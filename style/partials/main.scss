@@ -159,7 +159,7 @@ li.current-slide {
     position: relative;
     z-index: 1;
 
-    background: url(/img/wheel-clear.png);
+    background: url(/morgan//wheel-clear.png);
     background-size: cover;
     background-repeat: no-repeat;
     
@@ -171,7 +171,7 @@ li.current-slide {
     height: 64%;
     width: 100%;
     left: 1%;
-    background: url(/img/wheel-plus.png);
+    background: url(/morgan//wheel-plus.png);
     background-size: contain;
     z-index: 0;
     cursor: pointer;
@@ -183,7 +183,7 @@ li.current-slide {
     height: 64%;
     width: 100%;
     left: 1%;
-    background: url(/img/wheel-minus.png);
+    background: url(/morgan//wheel-minus.png);
     background-size: contain;
     z-index: 0;
     cursor: pointer;
@@ -191,7 +191,7 @@ li.current-slide {
 
 
 .button {
-    background-image: url(/img/mach-btn/normal.png);
+    background-image: url(/morgan//mach-btn/normal.png);
     background-size: cover;
     height: 59px;
     width: 147px;
@@ -206,12 +206,12 @@ li.current-slide {
 }
 
 .button:hover {
-    background-image: url(/img/mach-btn/hover.png);
+    background-image: url(/morgan//mach-btn/hover.png);
     color: white;
 }
 
 .button:active {
-    background-image: url(/img/mach-btn/pressed.png);
+    background-image: url(/morgan//mach-btn/pressed.png);
     transition: all 0.1s ease-in;
 }
 
@@ -250,7 +250,7 @@ img::selection {
 }
 
 .gallery-projector__projector {
-    background-image: url(/img/projector/projector.png);
+    background-image: url(/morgan//projector/projector.png);
     position: absolute;
     left: 0;
     right: 0;
@@ -398,7 +398,7 @@ li.machine__play-pause {
     height: 18.6vh;
     position: relative;
     box-sizing: border-box;
-    background: url(/img/header-bg.png);
+    background: url(/morgan//header-bg.png);
     background-size: cover;
     display: flex;
     justify-content: space-between;
@@ -774,7 +774,7 @@ li.machine__play-pause {
     justify-content: center;
     box-sizing: border-box;
     border: 15px solid black;
-    border-image: url(/img/gallery-border-image.png)14 10 14 12 round;
+    border-image: url(/morgan//gallery-border-image.png)14 10 14 12 round;
 }
 
 .category-item__video {
