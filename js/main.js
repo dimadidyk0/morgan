@@ -260,7 +260,7 @@ thisDoc.addEventListener("DOMContentLoaded", function() {
             span.setAttribute('data-content', i);
             span.innerHTML = i;
             if (i === '.') i = 'point';
-            span.style.backgroundImage = `url(/morgan//price-${i}.png)`;
+            span.style.backgroundImage = `url(/morgan/price-${i}.png)`;
             price.appendChild(span);
         });
 
