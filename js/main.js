@@ -39,7 +39,7 @@ window.onload = function() {
     if (preloader) preloader.remove();
     else console.log('Preloader not found')
 
-    if (window.location.pathname === '/' || window.location.pathname === '/index.html') {
+    if (window.location.pathname === '/morgan/' || window.location.pathname === '/morgan/index.html') {
 
         let isVisited = localStorage.getItem('visited'),
             main = document.querySelector('.main');
@@ -270,7 +270,7 @@ thisDoc.addEventListener("DOMContentLoaded", function() {
             span.setAttribute('data-content', i);
             span.innerHTML = i;
             if (i === '.') i = 'point';
-            span.style.backgroundImage = `url(/img/price-${i}.png)`;
+            span.style.backgroundImage = `url(/morgan/img/price-${i}.png)`;
             price.appendChild(span);
         });
 
@@ -295,7 +295,7 @@ thisDoc.addEventListener("DOMContentLoaded", function() {
             orderBtn.onclick = function() { 
 
                 let newImg = new Image();
-                newImg.src = '/img/buy-btn.gif';
+                newImg.src = '/morgan/img/buy-btn.gif';
                 newImg.onload = function() {
                     orderBtn.classList.add('product__btn--active');
                 }
@@ -685,7 +685,7 @@ function activateEasterEgg(elem, string, timeout) {
 function activateButterfly(cube) {
 
             let batterfly = new Image();
-            batterfly.src = '/img/butterfly.gif';
+            batterfly.src = '/morgan/img/butterfly.gif';
             batterfly.onload = function() {
                 setTimeout(function() {
                     let img = thisDoc.createElement('img');
@@ -718,7 +718,7 @@ function activateButterfly(cube) {
 //         "product-1" : {
 //             "year"        : "2000",
 //             "images"      : ["http://lorempixel.com/400/400/", "http://lorempixel.com/300/100/", "http://lorempixel.com/350/350/", "http://lorempixel.com/400/300/"], 
-//             "video"       : "/img/video/header",
+//             "video"       : "/morgan/img/video/header",
 //             "self"        : "product-1",
 //             "title"       : "title 1",
 //             "link"        : "/product.html",
@@ -735,7 +735,7 @@ function activateButterfly(cube) {
 //         "product-2"     : {
 //             "year"      : "2000",
 //             "images"    : ["http://lorempixel.com/401/400/","http://lorempixel.com/300/120/","http://lorempixel.com/360/350/","http://lorempixel.com/405/300/"], 
-//             "video"     : "/img/video/header",
+//             "video"     : "/morgan/img/video/header",
 //             "self"      : "product-2",
 //             "title"     : "title 2",
 //             "link"      : "/product.html",
@@ -752,7 +752,7 @@ function activateButterfly(cube) {
 //         "product-3"     : {
 //             "year"      : "2002",
 //             "images"    : ["http://lorempixel.com/402/400/","http://lorempixel.com/300/110/","http://lorempixel.com/340/350/","http://lorempixel.com/420/300/"], 
-//             "video"     : "/img/video/header",
+//             "video"     : "/morgan/img/video/header",
 //             "self"      : "product-3",
 //             "title"     : 'title 3',
 //             "link"      : "/product.html",
@@ -769,7 +769,7 @@ function activateButterfly(cube) {
 //         "product-4"     : {
 //             "year"      : "2003",
 //             "images"    : ["http://lorempixel.com/403/400/","http://lorempixel.com/320/100/","http://lorempixel.com/350/320/","http://lorempixel.com/405/301/"], 
-//             "video"     : "/img/video/header",
+//             "video"     : "/morgan/img/video/header",
 //             "self"      : "product-4",
 //             "title"     : "title 4",
 //             "link"      : "/product.html",
@@ -786,7 +786,7 @@ function activateButterfly(cube) {
 //         "product-5"     : {
 //             "year"      : "2003",
 //             "images"    : ["http://lorempixel.com/404/400/","http://lorempixel.com/310/100/","http://lorempixel.com/350/340/","http://lorempixel.com/420/300/"], 
-//             "video"     : "/img/video/header",
+//             "video"     : "/morgan/img/video/header",
 //             "self"      : "product-5",
 //             "title"     : "title 5",
 //             "link"      : "/product.html",
@@ -803,7 +803,7 @@ function activateButterfly(cube) {
 //         "product-6"     : {
 //             "year"      : "2003",
 //             "images"    : ["http://lorempixel.com/405/400/","http://lorempixel.com/305/100/","http://lorempixel.com/350/330/","http://lorempixel.com/410/300/"], 
-//             "video"     : "/img/video/header",
+//             "video"     : "/morgan/img/video/header",
 //             "self"      : "product-6",
 //             "title"     : "title 6",
 //             "link"      : "/product.html",
@@ -820,7 +820,7 @@ function activateButterfly(cube) {
 //         "product-7"     : {
 //             "year"      : "2003",
 //             "images"    : ["http://lorempixel.com/405/400/","http://lorempixel.com/305/100/","http://lorempixel.com/350/330/","http://lorempixel.com/410/300/"], 
-//             "video"     : "/img/video/header",
+//             "video"     : "/morgan/img/video/header",
 //             "self"      : "product-7",
 //             "title"     : "title 7",
 //             "link"      : "/product.html",
@@ -837,7 +837,7 @@ function activateButterfly(cube) {
 //         "product-8"     : {
 //             "year"      : "2003",
 //             "images"    : ["http://lorempixel.com/405/400/","http://lorempixel.com/305/100/","http://lorempixel.com/350/330/","http://lorempixel.com/410/300/"], 
-//             "video"     : "/img/video/header",
+//             "video"     : "/morgan/img/video/header",
 //             "self"      : "product-8",
 //             "title"     : "title 8",
 //             "link"      : "/product.html",
@@ -854,7 +854,7 @@ function activateButterfly(cube) {
 //         "product-9"     : {
 //             "year"      : "2003",
 //             "images"    : ["http://lorempixel.com/405/400/","http://lorempixel.com/305/100/","http://lorempixel.com/350/330/","http://lorempixel.com/410/300/"], 
-//             "video"     : "/img/video/header",
+//             "video"     : "/morgan/img/video/header",
 //             "self"      : "product-9",
 //             "title"     : "title 9",
 //             "link"      : "/product.html",
@@ -871,7 +871,7 @@ function activateButterfly(cube) {
 //         "product-10"     : {
 //             "year"      : "2003",
 //             "images"    : ["http://lorempixel.com/405/400/","http://lorempixel.com/305/100/","http://lorempixel.com/350/330/","http://lorempixel.com/410/300/"], 
-//             "video"     : "/img/video/header",
+//             "video"     : "/morgan/img/video/header",
 //             "self"      : "product-10",
 //             "title"     : "title 10",
 //             "link"      : "/product.html",
@@ -888,7 +888,7 @@ function activateButterfly(cube) {
 //         "product-11"     : {
 //             "year"      : "2003",
 //             "images"    : ["http://lorempixel.com/405/400/","http://lorempixel.com/305/100/","http://lorempixel.com/350/330/","http://lorempixel.com/410/300/"], 
-//             "video"     : "/img/video/header",
+//             "video"     : "/morgan/img/video/header",
 //             "self"      : "product-11",
 //             "title"     : "title 11",
 //             "link"      : "/product.html",
@@ -935,8 +935,8 @@ var json = JSON.stringify( {
     "products" : {
         "product-1" : {
             "year"        : "2000",
-            "images"      : ["/img/image-1.jpg"], 
-            "video"       : "/img/video/credits",
+            "images"      : ["/morgan/img/image-1.jpg"], 
+            "video"       : "/morgan/img/video/credits",
             "self"        : "product-1",
             "title"       : "PLAYBOY",
             "link"        : "/product.html",
@@ -952,8 +952,8 @@ var json = JSON.stringify( {
 
         "product-2"     : {
             "year"      : "2001",
-            "images"    : ["/img/image-2.jpg"], 
-            "video"     : "/img/video/credits",
+            "images"    : ["/morgan/img/image-2.jpg"], 
+            "video"     : "/morgan/img/video/credits",
             "self"      : "product-2",
             "title"     : "PLAYBOY",
             "link"      : "/product.html",
@@ -969,8 +969,8 @@ var json = JSON.stringify( {
 
         "product-3"     : {
             "year"      : "2002",
-            "images"    : ["/img/image-3.jpg","/img/image-3-1.jpg"], 
-            "video"     : "/img/video/credits",
+            "images"    : ["/morgan/img/image-3.jpg","/morgan/img/image-3-1.jpg"], 
+            "video"     : "/morgan/img/video/credits",
             "self"      : "product-3",
             "title"     : 'PLAYBOY LUXE',
             "link"      : "/product.html",
@@ -986,8 +986,8 @@ var json = JSON.stringify( {
 
         "product-4"     : {
             "year"      : "2002",
-            "images"    : ["/img/image-3.jpg","/img/image-3-1.jpg"], 
-            "video"     : "/img/video/credits",
+            "images"    : ["/morgan/img/image-3.jpg","/morgan/img/image-3-1.jpg"], 
+            "video"     : "/morgan/img/video/credits",
             "self"      : "product-4",
             "title"     : 'PLAYBOY LUXE',
             "link"      : "/product.html",
@@ -1003,8 +1003,8 @@ var json = JSON.stringify( {
 
         "product-5"     : {
             "year"      : "2002",
-            "images"    : ["/img/image-3.jpg","/img/image-3-1.jpg"], 
-            "video"     : "/img/video/credits",
+            "images"    : ["/morgan/img/image-3.jpg","/morgan/img/image-3-1.jpg"], 
+            "video"     : "/morgan/img/video/credits",
             "self"      : "product-5",
             "title"     : 'PLAYBOY LUXE',
             "link"      : "/product.html",
@@ -1020,8 +1020,8 @@ var json = JSON.stringify( {
         
         "product-6"     : {
             "year"      : "2002",
-            "images"    : ["/img/image-3.jpg","/img/image-3-1.jpg"], 
-            "video"     : "/img/video/credits",
+            "images"    : ["/morgan/img/image-3.jpg","/morgan/img/image-3-1.jpg"], 
+            "video"     : "/morgan/img/video/credits",
             "self"      : "product-6",
             "title"     : 'PLAYBOY LUXE',
             "link"      : "/product.html",
@@ -1037,8 +1037,8 @@ var json = JSON.stringify( {
         
         "product-7"     : {
             "year"      : "2002",
-            "images"    : ["/img/image-3.jpg","/img/image-3-1.jpg"], 
-            "video"     : "/img/video/credits",
+            "images"    : ["/morgan/img/image-3.jpg","/morgan/img/image-3-1.jpg"], 
+            "video"     : "/morgan/img/video/credits",
             "self"      : "product-7",
             "title"     : 'PLAYBOY LUXE',
             "link"      : "/product.html",
@@ -1650,7 +1650,7 @@ function buildCategories() {
             e.preventDefault();
             localStorage.setItem('currentCategory', current['self']);
             localStorage.setItem('currentGalleryList', json['categories'][c]['products'])
-            window.location = '/gallery.html';
+            window.location = '/morgan/gallery.html';
         }
 
         let span = thisDoc.createElement('span');
